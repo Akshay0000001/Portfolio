@@ -1,0 +1,119 @@
+/* components/Header.module.css */
+.header {
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-left: 3%;
+}
+
+.togg {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuButton {
+  display: none;
+  /* Hide by default */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ff6347;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.2rem;
+    margin-left: 2%;
+  }
+
+  .nav li {
+    margin-left: 1rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  .nav.active {
+    display: flex;
+    /* Show when active */
+    flex-direction: column;
+    /* Stack links vertically */
+    background-color: #333;
+    /* Match the header background */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+    margin-left: 10%;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
+  }
+
+  .menuButton {
+    display: block;
+    /* Show the menu button on smaller screens */
+  }
+
+  .nav {
+    display: none;
+    /* Hide navigation by default */
+  }
+}

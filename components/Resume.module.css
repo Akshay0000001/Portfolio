@@ -1,0 +1,56 @@
+.resume {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .resume h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .resume p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .viewButton, .downloadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  /* View Online Button */
+  .viewButton {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .viewButton:hover {
+    background-color: #217dbb;
+  }
+  
+  /* Download Button */
+  .downloadButton {
+    background-color: #ff6347;
+    color: #fff;
+  }
+  
+  .downloadButton:hover {
+    background-color: #e5533d;
+  }
+  
+  /* Resume Embed */
+  .iframe {
+    width: 80%;
+    height: 600px;
+    margin-top: 20px;
+    border: none;
+  }
+  
