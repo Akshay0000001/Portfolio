@@ -15,8 +15,10 @@ const Projects = () => {
           </p>
         </div>
         <div className={styles.projectCard}>
-          <h3>Project 2</h3><br></br>
-          <p>Description of Project 2.</p>
+          <h3>Portfolio</h3><br></br>
+          <p>
+          "An interactive, visually appealing portfolio showcasing my work as a front-end developer. Built with Next.js and React, this portfolio displays various projects, including dynamic features like a contact form and project showcase. The responsive design ensures it works seamlessly across devices, while modern tools like Vercel allow for easy hosting and deployment. The portfolio demonstrates my skills in front-end technologies such as HTML, CSS, JavaScript, React, and Next.js, highlighting my ability to create engaging user experiences and maintain clean, modular code."
+          </p>
         </div>
         {/* Add more project cards as needed */}
       </div>
