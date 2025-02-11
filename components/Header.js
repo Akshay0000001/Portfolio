@@ -6,7 +6,7 @@ import { useState } from 'react';
 import styles from './Header.module.css';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev); // Toggle the menu state
@@ -22,7 +22,9 @@ const Header = () => {
           <button className={styles.menuButton} onClick={toggleMenu}>
             ☰
           </button>
-          <nav className={`${styles.nav} ${isOpen ? styles.active : ''}`}>
+        </div>
+      </div>
+      <nav className={`${styles.nav} ${isOpen ? styles.active : ''}`}>
             <ul>
               <li>
                 <Link href="#about">About</Link>
@@ -34,9 +36,7 @@ const Header = () => {
                 <Link href="#contact">Contact</Link>
               </li>
             </ul>
-          </nav>
-        </div>
-      </div>
+      </nav>
     </header>
   );
 };
