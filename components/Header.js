@@ -1,4 +1,3 @@
-// components/Header.js
 "use client"; // This directive marks the component as a client component
 
 import Link from 'next/link';
@@ -6,7 +5,7 @@ import { useState } from 'react';
 import styles from './Header.module.css';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev); // Toggle the menu state
@@ -32,13 +31,13 @@ const Header = () => {
       <nav className={`${styles.nav} ${isOpen ? styles.active : ''}`}>
         <ul>
           <li>
-            <Link href="#about" >About</Link>
+            <Link href="#about">About</Link>
           </li>
           <li>
-            <Link href="#projects" >Projects</Link>
+            <Link href="#projects">Projects</Link>
           </li>
           <li>
-            <Link href="#contact" >Contact</Link>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>
       </nav>
