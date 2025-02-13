@@ -83,7 +83,7 @@
   }
 
   .projectCard {
-    width: calc(50% - 1rem); /* Two cards per row */
+    width: 100%; 
   }
 
   .formLabel {

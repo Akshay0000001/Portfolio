@@ -16,27 +16,32 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Link href="/">AKSHAY PK</Link>
+          <Link href="/">AKSHAY</Link>
         </div>
         <div className={styles.togg}>
-          <button className={styles.menuButton} onClick={toggleMenu}>
+          <button 
+            className={styles.menuButton} 
+            onClick={toggleMenu} 
+            aria-expanded={isOpen}
+            aria-label="Toggle menu"
+          >
             ☰
           </button>
-          <nav className={`${styles.nav} ${isOpen ? styles.active : ''}`}>
-            <ul>
-              <li>
-                <Link href="#about">About</Link>
-              </li>
-              <li>
-                <Link href="#projects">Projects</Link>
-              </li>
-              <li>
-                <Link href="#contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
+      <nav className={`${styles.nav} ${isOpen ? styles.active : ''}`}>
+        <ul>
+          <li>
+            <Link href="#about" >About</Link>
+          </li>
+          <li>
+            <Link href="#projects" >Projects</Link>
+          </li>
+          <li>
+            <Link href="#contact" >Contact</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
