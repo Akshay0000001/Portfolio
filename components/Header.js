@@ -5,7 +5,7 @@ import { useState } from 'react';
 import styles from './Header.module.css';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev); // Toggle the menu state
